@@ -745,32 +745,29 @@
           </div>
 
           <h1 class="hero-title reveal d1" id="hero-h1">
-            Tu empresa ya registra<br>tus horas.<br>
-            <em>Tú también deberías.</em>
+            Tu empresa registra tus horas.<br>
+            <em>¿Tú también lo haces?</em>
           </h1>
 
           <p class="hero-sub reveal d2">
-            TIDN genera el <strong>PDF legal de tu jornada</strong> y te lo
-            pone en la mano. Hecho para el trabajador, no para el jefe.
+            TIDN registra tu jornada laboral. <strong>El PDF es tuyo.</strong>
+            Gratis, sin cuenta, sin que nadie vea tus horas hasta que tú decidas.
           </p>
 
           <div class="hero-actions reveal d3">
-            <a href="https://play.google.com/apps/testing/com.tidn.app"
+            <a href="https://play.google.com/store/apps/details?id=com.tidn.app"
                class="btn-primary"
                target="_blank"
                rel="noopener noreferrer"
-               aria-label="Descargar TIDN gratis — programa tester">
-              Descargar gratis &mdash; soy tester
+               aria-label="Descargar TIDN gratis en Google Play">
+              Descargar gratis en Google Play
             </a>
-            <a href="#como-funciona" class="btn-secondary">
-              Ver cómo funciona &darr;
+            <a href="https://tidn-83e8d.web.app"
+               class="btn-secondary"
+               target="_blank"
+               rel="noopener noreferrer">
+              Panel para empresas &rarr;
             </a>
-          </div>
-
-          <div class="hero-proof reveal d4">
-            <p class="proof-text">
-              Los 4 primeros testers activos reciben <strong>Premium gratis 1&nbsp;año</strong>
-            </p>
           </div>
         </div>
 
@@ -1063,162 +1060,26 @@
 
   <div class="divider"></div>
 
-  <!-- ========== TESTER FORM ========== -->
-  <section class="tester" id="testers" aria-labelledby="tester-h2">
+  <!-- ========== PARA EMPRESAS ========== -->
+  <section class="tester" aria-labelledby="empresas-h2">
     <div class="container">
       <div class="tester-inner">
-
-        <!-- Left: Offer -->
         <div>
-          <span class="section-label reveal">Programa tester</span>
-          <h2 class="section-title reveal d1" id="tester-h2">
-            Únete al programa tester
+          <span class="section-label reveal">Para empresas</span>
+          <h2 class="section-title reveal d1" id="empresas-h2">
+            ¿Eres empresa o gestionas equipos?
           </h2>
           <p class="section-sub reveal d2">
-            TIDN está en prueba cerrada. Necesito trabajadores reales que la usen
-            y me cuenten qué funciona y qué no.
+            Gestiona el registro de jornada de todo tu equipo desde un panel web.
+            Cumple el RDL 8/2019 sin esfuerzo. Sin instalar nada en tus servidores.
           </p>
-
-          <div class="offer-box reveal d3" role="region" aria-label="Recompensa para testers activos">
-            <p class="offer-box-label">Recompensa para testers activos</p>
-            <p class="offer-box-text">
-              Los <strong>4 primeros testers activos</strong> que usen TIDN
-              <strong>14 días activos</strong> reciben
-              <strong>Premium gratis durante 1 año</strong> cuando se lance.
-              Sin tarjeta. Sin trampa.
-            </p>
-          </div>
-
-          <p class="tester-indie reveal d4">
-            Hecho por trabajadores, para trabajadores.&nbsp;
-            <a href="https://srflecky.github.io/tidn-privacy/"
-               target="_blank"
-               rel="noopener noreferrer">
-              Sin trampa con tu privacidad.
-            </a>
-          </p>
+          <a href="https://tidn-83e8d.web.app"
+             class="btn-primary reveal d3"
+             target="_blank"
+             rel="noopener noreferrer">
+            Acceder al panel de empresas
+          </a>
         </div>
-
-        <!-- Right: Form -->
-        <div class="reveal d2">
-          <div id="formContainer">
-            <h3 class="form-title">Reservar mi plaza</h3>
-            <p class="form-subtitle">
-              Solo tu email. Sin spam. En 48&nbsp;h te cuento los siguientes pasos.
-            </p>
-
-            <!--
-              SUSTITUIR: reemplaza XXXXXXXX por tu ID de FormSpree real
-              Ejemplo: action="https://formspree.io/f/abcdefgh"
-            -->
-            <form id="testerForm"
-                  action="https://formspree.io/f/xeepgjoj"
-                  method="POST"
-                  novalidate
-                  aria-label="Formulario para ser tester de TIDN">
-
-              <input type="hidden" name="_subject" value="Nuevo tester TIDN">
-              <input type="hidden" name="_captcha" value="false">
-
-              <div class="form-group">
-                <label for="email">Tu email</label>
-                <input type="email"
-                       id="email"
-                       name="email"
-                       class="form-input"
-                       placeholder="tu@email.com — confidencial"
-                       required
-                       autocomplete="email"
-                       aria-required="true"
-                       aria-describedby="emailErr">
-                <p class="form-error-msg" id="emailErr" role="alert"></p>
-              </div>
-
-              <label class="form-check" for="commit">
-                <input type="checkbox"
-                       id="commit"
-                       name="compromiso"
-                       value="aceptado"
-                       required
-                       aria-required="true">
-                <span class="form-check-lbl">
-                  Entiendo que debo usar TIDN <strong>14 días activos</strong> para
-                  recibir el año Premium cuando se lance
-                </span>
-              </label>
-
-              <button type="submit" class="btn-submit" id="submitBtn">
-                Reservar mi plaza de tester
-              </button>
-
-              <p class="form-disclaimer">
-                Sin spam. Solo te escribo para el código Premium.<br>
-                Puedes borrarte cuando quieras.
-              </p>
-            </form>
-          </div>
-
-          <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
-            <div class="success-icon" aria-hidden="true">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6A958F" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <h3>Plaza reservada</h3>
-            <p>
-              Te llegará un email de confirmación.<br>
-              En 48&nbsp;h te cuento los siguientes pasos.<br><br>
-              Gracias por ser parte de esto desde el principio.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== TESTIMONIOS ========== -->
-  <section class="testimonials" aria-labelledby="testi-h2">
-    <div class="container">
-      <div class="testi-header">
-        <span class="section-label reveal">Testers Alpha</span>
-        <h2 class="section-title reveal d1" id="testi-h2">
-          Lo que dicen<br>los primeros en probarla
-        </h2>
-      </div>
-
-      <div class="testi-grid">
-
-        <article class="testi-card reveal d1" aria-label="Testimonio de Pepe">
-          <span class="testi-badge">TESTER #1</span>
-          <p class="testi-quote">
-            Fiché el mes entero y mandé el PDF a mi jefe el día 1.
-            No esperaba que funcionara tan bien. Llevaba años buscando algo así.
-          </p>
-          <div class="testi-author">
-            <div class="testi-avatar" aria-hidden="true">P</div>
-            <div>
-              <p class="testi-name">Pepe</p>
-              <p class="testi-role">Tester Alpha</p>
-            </div>
-          </div>
-        </article>
-
-        <article class="testi-card reveal d2" aria-label="Testimonio de Rafael">
-          <span class="testi-badge">TESTER #2</span>
-          <p class="testi-quote">
-            Por fin una app que registra mis horas extras de verdad.
-            Y sin que la empresa vea nada hasta que yo decida enviárselo.
-          </p>
-          <div class="testi-author">
-            <div class="testi-avatar" aria-hidden="true">R</div>
-            <div>
-              <p class="testi-name">Rafael</p>
-              <p class="testi-role">Tester Alpha</p>
-            </div>
-          </div>
-        </article>
-
       </div>
     </div>
   </section>
@@ -1227,7 +1088,7 @@
 
   <!-- STICKY MOBILE CTA -->
   <div class="sticky-cta" id="stickyCta" aria-label="Descarga TIDN">
-    <a href="https://play.google.com/apps/testing/com.tidn.app"
+    <a href="https://play.google.com/store/apps/details?id=com.tidn.app"
        class="sticky-cta-btn"
        target="_blank"
        rel="noopener noreferrer"
@@ -1236,7 +1097,7 @@
         <path d="M3.18 23.2a1.3 1.3 0 001.14.02L15.6 12 4.32.78A1.3 1.3 0 003.18.8C2.46 1.18 2 1.94 2 2.78v18.44c0 .84.46 1.6 1.18 1.98z"/>
         <path d="M19.2 9.8L16.4 8.14 13.4 12l3 3.86 2.8-1.66c.8-.48 1.28-1.32 1.28-2.2s-.48-1.72-1.28-2.2z" opacity=".85"/>
       </svg>
-      Descargar gratis — soy tester
+      Descargar gratis en Google Play
     </a>
   </div>
 
@@ -1324,80 +1185,6 @@
       });
     });
 
-    // === FORM ===
-    const form      = document.getElementById('testerForm');
-    const submitBtn = document.getElementById('submitBtn');
-    const formWrap  = document.getElementById('formContainer');
-    const formOk    = document.getElementById('formSuccess');
-    const emailIn   = document.getElementById('email');
-    const emailErr  = document.getElementById('emailErr');
-    const commitBox = document.getElementById('commit');
-
-    function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
-
-    function showEmailError(msg) {
-      emailErr.textContent = msg;
-      emailErr.style.display = 'block';
-      emailIn.classList.add('error');
-    }
-    function clearEmailError() {
-      emailErr.style.display = 'none';
-      emailIn.classList.remove('error');
-    }
-
-    emailIn?.addEventListener('blur', () => {
-      if (emailIn.value && !validEmail(emailIn.value)) {
-        showEmailError('Introduce un email válido');
-      } else {
-        clearEmailError();
-      }
-    });
-    emailIn?.addEventListener('input', () => {
-      if (emailIn.classList.contains('error') && validEmail(emailIn.value)) {
-        clearEmailError();
-      }
-    });
-
-    form?.addEventListener('submit', async e => {
-      e.preventDefault();
-      clearEmailError();
-
-      if (!emailIn.value || !validEmail(emailIn.value)) {
-        showEmailError('Introduce un email válido para continuar');
-        emailIn.focus();
-        return;
-      }
-      if (!commitBox?.checked) {
-        commitBox?.parentElement?.animate(
-          [{ transform: 'translateX(-5px)' }, { transform: 'translateX(5px)' },
-           { transform: 'translateX(-4px)' }, { transform: 'translateX(0)' }],
-          { duration: 320, easing: 'ease-out' }
-        );
-        commitBox?.focus();
-        return;
-      }
-
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Reservando…';
-
-      try {
-        const res = await fetch(form.action, {
-          method: 'POST',
-          body: new FormData(form),
-          headers: { 'Accept': 'application/json' }
-        });
-        if (res.ok) {
-          formWrap.style.display = 'none';
-          formOk.style.display = 'block';
-        } else {
-          throw new Error('server');
-        }
-      } catch {
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Reservar mi plaza de tester';
-        showEmailError('Algo salió mal. Inténtalo de nuevo o escríbeme directamente.');
-      }
-    });
   </script>
 </body>
 </html>
